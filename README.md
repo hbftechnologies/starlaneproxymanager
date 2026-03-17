@@ -26,29 +26,14 @@ Everything in NGINX Proxy Manager works as-is. StarlaneProxyManager adds:
 - Docker Engine 20.10+
 - Docker Compose v2+
 
-### Quick Start
+### Option 1: Pre-built Image (Recommended)
 
-```bash
-git clone https://github.com/hbftechnologies/starlaneproxymanager.git
-cd StarlaneProxyManager
-cp .env.example .env
-docker compose up -d
-```
-
-The admin UI will be available at `http://your-host:81`.
-
-**Default credentials:** `admin@example.com` / `changeme` — change these immediately after first login.
-
-### Docker Compose
-
-Create a `docker-compose.yml` or use the one included in the repo:
+Create a `docker-compose.yml`:
 
 ```yaml
 services:
   app:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
+    image: ghcr.io/hbftechnologies/starlaneproxymanager:latest
     container_name: starlane-proxy-manager
     restart: unless-stopped
     ports:
@@ -71,6 +56,27 @@ volumes:
   spm_data:
   spm_letsencrypt:
 ```
+
+Then run:
+
+```bash
+docker compose up -d
+```
+
+Images are available for `linux/amd64` and `linux/arm64`.
+
+### Option 2: Build from Source
+
+```bash
+git clone https://github.com/hbftechnologies/starlaneproxymanager.git
+cd StarlaneProxyManager
+cp .env.example .env
+docker compose up -d --build
+```
+
+The admin UI will be available at `http://your-host:81`.
+
+**Default credentials:** `admin@example.com` / `changeme` — change these immediately after first login.
 
 ### Ports
 
