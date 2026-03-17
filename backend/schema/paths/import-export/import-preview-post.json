@@ -1,0 +1,64 @@
+{
+	"operationId": "importPreview",
+	"summary": "Preview an import and check for conflicts",
+	"description": "Validates the import payload and returns a preview with conflict details. Accepts JSON body or file upload (multipart/form-data). Admin access required.",
+	"tags": ["import-export"],
+	"security": [{ "BearerAuth": [] }],
+	"requestBody": {
+		"description": "Import payload (JSON body or file upload)",
+		"required": true,
+		"content": {
+			"application/json": {
+				"schema": {
+					"type": "object",
+					"description": "SPM export payload"
+				}
+			},
+			"multipart/form-data": {
+				"schema": {
+					"type": "object",
+					"properties": {
+						"file": {
+							"type": "string",
+							"format": "binary",
+							"description": "JSON or ZIP file to import"
+						}
+					}
+				}
+			}
+		}
+	},
+	"responses": {
+		"200": {
+			"description": "Import preview with conflict details",
+			"content": {
+				"application/json": {
+					"schema": {
+						"type": "object",
+						"properties": {
+							"valid": {
+								"type": "boolean"
+							},
+							"export_info": {
+								"type": "object"
+							},
+							"summary": {
+								"type": "object"
+							},
+							"conflicts": {
+								"type": "array",
+								"items": {
+									"type": "object"
+								}
+							},
+							"payload": {
+								"type": "object",
+								"description": "The parsed export payload (for use in commit)"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

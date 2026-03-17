@@ -1,0 +1,23 @@
+{
+	"type": "object",
+	"description": "Check Version object",
+	"additionalProperties": false,
+	"required": ["current", "latest", "update_available"],
+	"properties": {
+		"current": {
+			"type": ["string", "null"],
+			"description": "NPM base version that this SPM release is built on",
+			"example": "v2.14.0"
+		},
+		"latest": {
+			"type": ["string", "null"],
+			"description": "Latest upstream NPM release version",
+			"example": "v2.14.3"
+		},
+		"update_available": {
+			"type": "boolean",
+			"description": "Whether there's an update available",
+			"example": true
+		}
+	}
+}

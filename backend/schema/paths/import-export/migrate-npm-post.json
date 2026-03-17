@@ -1,0 +1,45 @@
+{
+	"operationId": "migrateFromNpm",
+	"summary": "Upload NPM SQLite database for migration",
+	"description": "Reads an NGINX Proxy Manager SQLite database file and converts it to the SPM import format. Returns a preview with conflicts. Admin access required.",
+	"tags": ["import-export"],
+	"security": [{ "BearerAuth": [] }],
+	"requestBody": {
+		"description": "NPM database file upload",
+		"required": true,
+		"content": {
+			"multipart/form-data": {
+				"schema": {
+					"type": "object",
+					"required": ["database"],
+					"properties": {
+						"database": {
+							"type": "string",
+							"format": "binary",
+							"description": "The NPM database.sqlite file"
+						}
+					}
+				}
+			}
+		}
+	},
+	"responses": {
+		"200": {
+			"description": "Migration preview with conflict details (same format as import preview)",
+			"content": {
+				"application/json": {
+					"schema": {
+						"type": "object",
+						"properties": {
+							"valid": { "type": "boolean" },
+							"export_info": { "type": "object" },
+							"summary": { "type": "object" },
+							"conflicts": { "type": "array" },
+							"payload": { "type": "object" }
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment & Secrets
+.env
+*.pem
+*.key
+*.crt
+credentials/
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Application Data
+/data/
+/letsencrypt/
+
+# Build Artifacts
+dist/
+build/
+*.tgz
+
+# Logs
+*.log
+/logs/
+
+# OS Files
+.DS_Store
+._*
+Thumbs.db
+
+# IDE / Editor
+.idea/
+.vscode/
+.qodo/
+*.swp
+*.swo
+*~
+
+# Docker dev artifacts
+docker/dev/dnsrouter-config.json.tmp
+docker/dev/resolv.conf
+
+# Test artifacts
+test/results/
+coverage/
+
+# Misc
+certbot-help.txt

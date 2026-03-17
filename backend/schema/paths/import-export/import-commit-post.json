@@ -1,0 +1,80 @@
+{
+	"operationId": "importCommit",
+	"summary": "Commit an import with conflict resolutions",
+	"description": "Applies the import with user-provided conflict resolutions. Admin access required.",
+	"tags": ["import-export"],
+	"security": [{ "BearerAuth": [] }],
+	"requestBody": {
+		"description": "Import payload with conflict resolutions",
+		"required": true,
+		"content": {
+			"application/json": {
+				"schema": {
+					"type": "object",
+					"required": ["payload"],
+					"properties": {
+						"payload": {
+							"type": "object",
+							"description": "The SPM export payload"
+						},
+						"resolutions": {
+							"type": "object",
+							"properties": {
+								"conflicts": {
+									"type": "array",
+									"items": {
+										"type": "object",
+										"properties": {
+											"type": {
+												"type": "string",
+												"description": "Entity type (proxy_host, certificate, etc.)"
+											},
+											"import_index": {
+												"type": "integer",
+												"description": "Index of the item in the import payload array"
+											},
+											"action": {
+												"type": "string",
+												"enum": ["skip", "overwrite", "use_existing", "create_new"],
+												"description": "Resolution action"
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"example": {
+					"payload": {},
+					"resolutions": {
+						"conflicts": [
+							{ "type": "proxy_host", "import_index": 0, "action": "skip" }
+						]
+					}
+				}
+			}
+		}
+	},
+	"responses": {
+		"201": {
+			"description": "Import result summary",
+			"content": {
+				"application/json": {
+					"schema": {
+						"type": "object",
+						"properties": {
+							"access_lists": { "type": "object" },
+							"certificates": { "type": "object" },
+							"proxy_hosts": { "type": "object" },
+							"redirection_hosts": { "type": "object" },
+							"dead_hosts": { "type": "object" },
+							"streams": { "type": "object" },
+							"settings": { "type": "object" }
+						}
+					}
+				}
+			}
+		}
+	}
+}

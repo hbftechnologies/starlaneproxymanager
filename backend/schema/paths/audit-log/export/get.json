@@ -1,0 +1,94 @@
+{
+	"operationId": "exportAuditLogs",
+	"summary": "Export Audit Logs",
+	"description": "Export filtered audit logs as CSV or JSON. Hard cap of 10,000 rows.",
+	"tags": ["audit-log"],
+	"security": [
+		{
+			"bearerAuth": ["admin"]
+		}
+	],
+	"parameters": [
+		{
+			"name": "format",
+			"in": "query",
+			"description": "Export format (csv or json)",
+			"schema": {
+				"type": "string",
+				"enum": ["csv", "json"],
+				"default": "json"
+			}
+		},
+		{
+			"name": "date_from",
+			"in": "query",
+			"description": "Filter from date (ISO 8601)",
+			"schema": {
+				"type": "string"
+			}
+		},
+		{
+			"name": "date_to",
+			"in": "query",
+			"description": "Filter to date (ISO 8601)",
+			"schema": {
+				"type": "string"
+			}
+		},
+		{
+			"name": "user_id",
+			"in": "query",
+			"description": "Filter by user ID",
+			"schema": {
+				"type": "integer",
+				"minimum": 1
+			}
+		},
+		{
+			"name": "action",
+			"in": "query",
+			"description": "Filter by action",
+			"schema": {
+				"type": "string",
+				"enum": ["created", "updated", "deleted", "enabled", "disabled"]
+			}
+		},
+		{
+			"name": "object_type",
+			"in": "query",
+			"description": "Filter by object type",
+			"schema": {
+				"type": "string",
+				"enum": ["proxy-host", "user", "certificate", "access-list", "stream", "dead-host", "redirection-host"]
+			}
+		},
+		{
+			"name": "query",
+			"in": "query",
+			"description": "Search text in meta",
+			"schema": {
+				"type": "string"
+			}
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "Exported audit log data",
+			"content": {
+				"application/json": {
+					"schema": {
+						"type": "array",
+						"items": {
+							"$ref": "../../../components/audit-log-object.json"
+						}
+					}
+				},
+				"text/csv": {
+					"schema": {
+						"type": "string"
+					}
+				}
+			}
+		}
+	}
+}

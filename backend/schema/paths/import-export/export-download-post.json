@@ -1,0 +1,55 @@
+{
+	"operationId": "exportConfigZip",
+	"summary": "Export configuration as ZIP with certificate files",
+	"description": "Exports the current SPM configuration as a ZIP file including certificate PEM files. Admin access required.",
+	"tags": ["import-export"],
+	"security": [{ "BearerAuth": [] }],
+	"requestBody": {
+		"description": "Export options",
+		"required": true,
+		"content": {
+			"application/json": {
+				"schema": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"type": {
+							"type": "string",
+							"enum": ["full", "selective"],
+							"default": "full"
+						},
+						"include_types": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["access_lists", "certificates", "proxy_hosts", "redirection_hosts", "dead_hosts", "streams", "settings"]
+							}
+						},
+						"host_ids": {
+							"type": "array",
+							"items": {
+								"type": "integer"
+							}
+						}
+					}
+				},
+				"example": {
+					"type": "full"
+				}
+			}
+		}
+	},
+	"responses": {
+		"200": {
+			"description": "ZIP file containing export.json and certificate files",
+			"content": {
+				"application/zip": {
+					"schema": {
+						"type": "string",
+						"format": "binary"
+					}
+				}
+			}
+		}
+	}
+}

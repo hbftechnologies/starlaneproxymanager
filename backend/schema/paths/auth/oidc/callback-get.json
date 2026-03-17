@@ -1,0 +1,26 @@
+{
+	"operationId": "oidcCallback",
+	"summary": "Handle OIDC callback",
+	"description": "Handles the OIDC provider's redirect after user authentication. Exchanges authorization code for tokens, finds or creates the user, and redirects to the frontend with an SPM JWT.",
+	"tags": ["oidc"],
+	"parameters": [
+		{
+			"name": "code",
+			"in": "query",
+			"description": "Authorization code from the OIDC provider",
+			"schema": { "type": "string" }
+		},
+		{
+			"name": "state",
+			"in": "query",
+			"description": "State parameter for CSRF protection",
+			"required": true,
+			"schema": { "type": "string" }
+		}
+	],
+	"responses": {
+		"302": {
+			"description": "Redirect to frontend with JWT token in query params"
+		}
+	}
+}

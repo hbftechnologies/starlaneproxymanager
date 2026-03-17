@@ -1,0 +1,58 @@
+{
+	"operationId": "exportConfig",
+	"summary": "Export configuration as JSON",
+	"description": "Exports the current SPM configuration as a JSON file. Admin access required.",
+	"tags": ["import-export"],
+	"security": [{ "BearerAuth": [] }],
+	"requestBody": {
+		"description": "Export options",
+		"required": true,
+		"content": {
+			"application/json": {
+				"schema": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"type": {
+							"type": "string",
+							"enum": ["full", "selective"],
+							"default": "full",
+							"description": "Export type: full exports everything, selective exports only specified hosts"
+						},
+						"include_types": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"enum": ["access_lists", "certificates", "proxy_hosts", "redirection_hosts", "dead_hosts", "streams", "settings"]
+							},
+							"description": "Types to include in the export"
+						},
+						"host_ids": {
+							"type": "array",
+							"items": {
+								"type": "integer"
+							},
+							"description": "Specific proxy host IDs to export (only for selective type)"
+						}
+					}
+				},
+				"example": {
+					"type": "full",
+					"include_types": ["proxy_hosts", "redirection_hosts", "dead_hosts", "streams", "access_lists", "certificates", "settings"]
+				}
+			}
+		}
+	},
+	"responses": {
+		"200": {
+			"description": "Export JSON payload",
+			"content": {
+				"application/json": {
+					"schema": {
+						"type": "object"
+					}
+				}
+			}
+		}
+	}
+}

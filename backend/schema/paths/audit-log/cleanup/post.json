@@ -1,0 +1,52 @@
+{
+	"operationId": "cleanupAuditLogs",
+	"summary": "Cleanup Audit Logs",
+	"description": "Delete old audit log entries based on age or entry count limits. Admin only.",
+	"tags": ["audit-log"],
+	"security": [
+		{
+			"bearerAuth": ["admin"]
+		}
+	],
+	"requestBody": {
+		"content": {
+			"application/json": {
+				"schema": {
+					"type": "object",
+					"properties": {
+						"max_age_days": {
+							"type": "integer",
+							"minimum": 0,
+							"default": 0,
+							"description": "Delete entries older than this many days (0 = skip)"
+						},
+						"max_entries": {
+							"type": "integer",
+							"minimum": 0,
+							"default": 0,
+							"description": "Keep at most this many entries (0 = skip)"
+						}
+					}
+				}
+			}
+		}
+	},
+	"responses": {
+		"200": {
+			"description": "Cleanup result",
+			"content": {
+				"application/json": {
+					"schema": {
+						"type": "object",
+						"properties": {
+							"deleted": {
+								"type": "integer",
+								"description": "Number of entries deleted"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

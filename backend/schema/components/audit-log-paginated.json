@@ -1,0 +1,32 @@
+{
+	"type": "object",
+	"description": "Paginated audit log response",
+	"required": ["data", "pagination"],
+	"properties": {
+		"data": {
+			"$ref": "./audit-log-list.json"
+		},
+		"pagination": {
+			"type": "object",
+			"required": ["total", "page", "limit", "totalPages"],
+			"properties": {
+				"total": {
+					"type": "integer",
+					"description": "Total number of entries"
+				},
+				"page": {
+					"type": "integer",
+					"description": "Current page number"
+				},
+				"limit": {
+					"type": "integer",
+					"description": "Items per page"
+				},
+				"totalPages": {
+					"type": "integer",
+					"description": "Total number of pages"
+				}
+			}
+		}
+	}
+}

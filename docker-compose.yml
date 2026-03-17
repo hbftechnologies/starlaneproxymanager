@@ -1,0 +1,41 @@
+# StarlaneProxyManager — Production
+# Usage: docker compose up -d
+services:
+  app:
+    image: starlane-proxy-manager:latest
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: starlane-proxy-manager
+    restart: unless-stopped
+    ports:
+      - "80:80"     # HTTP
+      - "81:81"     # Admin UI
+      - "82:82"     # API Documentation
+      - "443:443"   # HTTPS
+    environment:
+      TZ: "${TZ:-America/Chicago}"
+      PUID: "${PUID:-1000}"
+      PGID: "${PGID:-1000}"
+      DB_SQLITE_FILE: "/data/database.sqlite"
+      # PASSWORD_FORM_SHOW: "false"  # Set to "true" to override OIDC-only mode
+      # Uncomment for MySQL:
+      # DB_MYSQL_HOST: "db"
+      # DB_MYSQL_PORT: "3306"
+      # DB_MYSQL_USER: "${DB_USER:-npm}"
+      # DB_MYSQL_PASSWORD: "${DB_PASSWORD:-changeme}"
+      # DB_MYSQL_NAME: "${DB_NAME:-npm}"
+    volumes:
+      - npm_data:/data
+      - le_data:/etc/letsencrypt
+    healthcheck:
+      test: ["CMD", "/usr/bin/check-health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  npm_data:
+    name: spm_data
+  le_data:
+    name: spm_letsencrypt

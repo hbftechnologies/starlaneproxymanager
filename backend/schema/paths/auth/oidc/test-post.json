@@ -1,0 +1,40 @@
+{
+	"operationId": "testOIDCConnection",
+	"summary": "Test OIDC connection",
+	"description": "Tests the OIDC configuration by performing discovery against the configured issuer URL. Returns provider metadata on success. Admin access required.",
+	"tags": ["oidc"],
+	"security": [{ "BearerAuth": [] }],
+	"responses": {
+		"200": {
+			"description": "OIDC connection test result",
+			"content": {
+				"application/json": {
+					"schema": {
+						"type": "object",
+						"properties": {
+							"success": {
+								"type": "boolean"
+							},
+							"metadata": {
+								"type": "object",
+								"properties": {
+									"issuer": { "type": "string" },
+									"authorization_endpoint": { "type": "string" },
+									"token_endpoint": { "type": "string" },
+									"userinfo_endpoint": { "type": "string" },
+									"scopes_supported": {
+										"type": "array",
+										"items": { "type": "string" }
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"400": {
+			"description": "Connection test failed"
+		}
+	}
+}

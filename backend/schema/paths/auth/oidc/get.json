@@ -1,0 +1,14 @@
+{
+	"operationId": "oidcLogin",
+	"summary": "Initiate OIDC login",
+	"description": "Redirects the user to the OIDC provider's authorization endpoint. No authentication required.",
+	"tags": ["oidc"],
+	"responses": {
+		"302": {
+			"description": "Redirect to OIDC provider"
+		},
+		"404": {
+			"description": "OIDC is not enabled"
+		}
+	}
+}

@@ -1,0 +1,39 @@
+# Git
+.git/
+.gitignore
+
+# Dependencies (rebuilt in container)
+node_modules/
+*/node_modules/
+
+# Tests
+test/
+cypress/
+coverage/
+
+# IDE / Editor
+.idea/
+.vscode/
+.qodo/
+
+# Environment (secrets must not be baked into images)
+.env
+*.pem
+*.key
+credentials/
+
+# Documentation (not needed in container)
+docs/
+*.md
+LICENSE
+sessions/
+changelogs/
+
+# CI/CD
+.github/
+docker-compose*.yml
+
+# OS
+.DS_Store
+._*
+Thumbs.db

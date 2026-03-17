@@ -1,0 +1,1025 @@
+{
+	"2fa.backup-codes-remaining": {
+		"defaultMessage": "Počet zostávajúcich záložných kódov: {count}"
+	},
+	"2fa.backup-warning": {
+		"defaultMessage": "Tieto záložné kódy si uložte na bezpečnom mieste. Každý kód je možné použiť len raz."
+	},
+	"2fa.disable": {
+		"defaultMessage": "Vypnúť dvojfaktorové overovanie"
+	},
+	"2fa.disable-confirm": {
+		"defaultMessage": "Vypnúť 2FA"
+	},
+	"2fa.disable-warning": {
+		"defaultMessage": "Vypnutím dvojfaktorového overovania sa zníži bezpečnosť vášho účtu."
+	},
+	"2fa.disabled": {
+		"defaultMessage": "Vypnuté"
+	},
+	"2fa.done": {
+		"defaultMessage": "Uložil som si svoje záložné kódy."
+	},
+	"2fa.enable": {
+		"defaultMessage": "Zapnúť dvojfaktorové overovanie"
+	},
+	"2fa.enabled": {
+		"defaultMessage": "Zapnuté"
+	},
+	"2fa.enter-code": {
+		"defaultMessage": "Zadajte overovací kód"
+	},
+	"2fa.enter-code-disable": {
+		"defaultMessage": "Zadajte overovací kód na vypnutie"
+	},
+	"2fa.regenerate": {
+		"defaultMessage": "Znova vytvoriť"
+	},
+	"2fa.regenerate-backup": {
+		"defaultMessage": "Znova vytvoriť záložné kódy"
+	},
+	"2fa.regenerate-instructions": {
+		"defaultMessage": "Zadajte overovací kód, aby sa vytvorili nové záložné kódy. Vaše staré kódy budú neplatné."
+	},
+	"2fa.secret-key": {
+		"defaultMessage": "Tajný kľúč"
+	},
+	"2fa.setup-instructions": {
+		"defaultMessage": "Naskenujte tento QR kód pomocou svojej overovacej aplikácie alebo zadajte tajný kľúč ručne."
+	},
+	"2fa.status": {
+		"defaultMessage": "Stav"
+	},
+	"2fa.title": {
+		"defaultMessage": "Dvojfaktorové overenie"
+	},
+	"2fa.verify-enable": {
+		"defaultMessage": "Overiť a zapnúť"
+	},
+	"about.based-on": {
+		"defaultMessage": "Based on NGINX Proxy Manager {version}"
+	},
+	"about.fork-notice": {
+		"defaultMessage": "This is an open-source fork of {link}, enhanced for homelab environments."
+	},
+	"about.license": {
+		"defaultMessage": "Licensed under the MIT License"
+	},
+	"about.link": {
+		"defaultMessage": "About"
+	},
+	"about.maintained-by": {
+		"defaultMessage": "Maintained by {name}"
+	},
+	"about.title": {
+		"defaultMessage": "About Starlane Proxy Manager"
+	},
+	"about.version": {
+		"defaultMessage": "Version {version}"
+	},
+	"access-list": {
+		"defaultMessage": "zoznam prístupov"
+	},
+	"access-list.access-count": {
+		"defaultMessage": "{count} {count, plural, one {pravidlo} few {pravidlá} other {pravidiel}}"
+	},
+	"access-list.auth-count": {
+		"defaultMessage": "{count} {count, plural, one {používateľ} few {používatelia} other {používateľov}}"
+	},
+	"access-list.help-rules-last": {
+		"defaultMessage": "Keď existuje aspoň jedno pravidlo, toto pravidlo „zamietnuť všetko“ bude pridané ako posledné"
+	},
+	"access-list.help.rules-order": {
+		"defaultMessage": "Upozornenie: pravidlá povoliť a zamietnuť budú uplatňované v poradí, v akom sú definované."
+	},
+	"access-list.pass-auth": {
+		"defaultMessage": "Odoslať overenie na Upstream"
+	},
+	"access-list.public": {
+		"defaultMessage": "Verejne prístupné"
+	},
+	"access-list.public.subtitle": {
+		"defaultMessage": "Nie je potrebné základné overenie"
+	},
+	"access-list.rule-source.placeholder": {
+		"defaultMessage": "192.168.1.100 alebo 192.168.1.0/24 alebo 2001:0db8::/32"
+	},
+	"access-list.satisfy-any": {
+		"defaultMessage": "Splniť ktorékoľvek"
+	},
+	"access-list.subtitle": {
+		"defaultMessage": "{users} {users, plural, one {používateľ} few {používatelia} other {používateľov}}, {rules} {rules, plural, one {pravidlo} few {pravidlá} other {pravidiel}} - Vytvorené: {date}"
+	},
+	"access-lists": {
+		"defaultMessage": "Zoznamy prístupov"
+	},
+	"action.add": {
+		"defaultMessage": "Pridať"
+	},
+	"action.add-location": {
+		"defaultMessage": "Pridať umiestnenie"
+	},
+	"action.allow": {
+		"defaultMessage": "Povoliť"
+	},
+	"action.close": {
+		"defaultMessage": "Zavrieť"
+	},
+	"action.delete": {
+		"defaultMessage": "Vymazať"
+	},
+	"action.deny": {
+		"defaultMessage": "Zamietnuť"
+	},
+	"action.disable": {
+		"defaultMessage": "Deaktivovať"
+	},
+	"action.download": {
+		"defaultMessage": "Stiahnuť"
+	},
+	"action.edit": {
+		"defaultMessage": "Upraviť"
+	},
+	"action.enable": {
+		"defaultMessage": "Aktivovať"
+	},
+	"action.permissions": {
+		"defaultMessage": "Oprávnenia"
+	},
+	"action.renew": {
+		"defaultMessage": "Obnoviť"
+	},
+	"action.view-details": {
+		"defaultMessage": "Zobraziť podrobnosti"
+	},
+	"audit-log.export.csv": {
+		"defaultMessage": "Export CSV"
+	},
+	"audit-log.export.json": {
+		"defaultMessage": "Export JSON"
+	},
+	"audit-log.filter.action": {
+		"defaultMessage": "Action"
+	},
+	"audit-log.filter.clear": {
+		"defaultMessage": "Clear Filters"
+	},
+	"audit-log.filter.date-from": {
+		"defaultMessage": "Date From"
+	},
+	"audit-log.filter.date-to": {
+		"defaultMessage": "Date To"
+	},
+	"audit-log.filter.object-type": {
+		"defaultMessage": "Object Type"
+	},
+	"audit-log.filter.title": {
+		"defaultMessage": "Filters"
+	},
+	"audit-log.filter.user": {
+		"defaultMessage": "User"
+	},
+	"audit-log.pagination.page-of": {
+		"defaultMessage": "Page {page} of {totalPages}"
+	},
+	"audit-log.pagination.rows-per-page": {
+		"defaultMessage": "Rows per page"
+	},
+	"auditlogs": {
+		"defaultMessage": "Záznamy auditu"
+	},
+	"auto": {
+		"defaultMessage": "Automaticky"
+	},
+	"cancel": {
+		"defaultMessage": "Zrušiť"
+	},
+	"certificate": {
+		"defaultMessage": "certifikát"
+	},
+	"certificate.custom-certificate": {
+		"defaultMessage": "Certifikát"
+	},
+	"certificate.custom-certificate-key": {
+		"defaultMessage": "Kľúč certifikátu"
+	},
+	"certificate.custom-intermediate": {
+		"defaultMessage": "Sprostredkovateľský certifikát"
+	},
+	"certificate.in-use": {
+		"defaultMessage": "Používa sa"
+	},
+	"certificate.none.subtitle": {
+		"defaultMessage": "Nie je priradený žiadny certifikát"
+	},
+	"certificate.none.subtitle.for-http": {
+		"defaultMessage": "Tento hostiteľ nebude používať HTTPS"
+	},
+	"certificate.none.title": {
+		"defaultMessage": "Žiadny"
+	},
+	"certificate.not-in-use": {
+		"defaultMessage": "Nepoužíva sa"
+	},
+	"certificate.renew": {
+		"defaultMessage": "Obnoviť certifikát"
+	},
+	"certificates": {
+		"defaultMessage": "Certifikáty"
+	},
+	"certificates.custom": {
+		"defaultMessage": "Vlastný certifikát"
+	},
+	"certificates.custom.warning": {
+		"defaultMessage": "Súbory kľúčov chránené heslom nie sú podporované."
+	},
+	"certificates.dns.credentials": {
+		"defaultMessage": "Obsah súboru s prihlasovacími údajmi"
+	},
+	"certificates.dns.credentials-note": {
+		"defaultMessage": "Tento doplnok vyžaduje konfiguračný súbor obsahujúci API token alebo iné prihlasovacie údaje vášho poskytovateľa"
+	},
+	"certificates.dns.credentials-warning": {
+		"defaultMessage": "Tieto údaje budú uložené v databáze a v súbore ako obyčajný text!"
+	},
+	"certificates.dns.propagation-seconds": {
+		"defaultMessage": "Propagácia v sekundách"
+	},
+	"certificates.dns.propagation-seconds-note": {
+		"defaultMessage": "Ponechajte prázdne pre predvolenú hodnotu doplnku. Počet sekúnd, počas ktorých sa čaká na propagáciu DNS."
+	},
+	"certificates.dns.provider": {
+		"defaultMessage": "DNS poskytovateľ"
+	},
+	"certificates.dns.provider.placeholder": {
+		"defaultMessage": "Vyberte poskytovateľa..."
+	},
+	"certificates.dns.warning": {
+		"defaultMessage": "Táto sekcia vyžaduje znalosť Certbotu a jeho DNS doplnkov. Prosím, pozrite si dokumentáciu príslušného doplnku."
+	},
+	"certificates.http.reachability-404": {
+		"defaultMessage": "Na tejto doméne bol nájdený server, ale nezdá sa, že ide o Starlane Proxy Manager. Uistite sa, že vaša doména smeruje na IP, kde beží vaša inštancia SPM."
+	},
+	"certificates.http.reachability-failed-to-check": {
+		"defaultMessage": "Nepodarilo sa overiť dostupnosť kvôli chybe komunikácie so službou site24x7.com."
+	},
+	"certificates.http.reachability-not-resolved": {
+		"defaultMessage": "Na tejto doméne nie je dostupný žiadny server. Uistite sa, že doména existuje a smeruje na IP adresu s SPM a ak je to potrebné, port 80 je presmerovaný vo vašom smerovači."
+	},
+	"certificates.http.reachability-ok": {
+		"defaultMessage": "Váš server je dostupný a vytvorenie certifikátu by malo byť možné."
+	},
+	"certificates.http.reachability-other": {
+		"defaultMessage": "Na tejto doméne bol nájdený server, ale vrátil neočakávaný stavový kód {code}. Je to SPM server? Uistite sa prosím, že doména smeruje na IP, kde beží vaša inštancia SPM."
+	},
+	"certificates.http.reachability-wrong-data": {
+		"defaultMessage": "Na tejto doméne bol nájdený server, ale vrátil neočakávané údaje. Je to SPM server? Uistite sa, že doména smeruje na IP, kde beží vaša inštancia SPM."
+	},
+	"certificates.http.test-results": {
+		"defaultMessage": "Výsledky testu"
+	},
+	"certificates.http.warning": {
+		"defaultMessage": "Tieto domény musia byť už nakonfigurované tak, aby smerovali na túto inštaláciu."
+	},
+	"certificates.key-type": {
+		"defaultMessage": "Typ kľúča"
+	},
+	"certificates.key-type-description": {
+		"defaultMessage": "RSA je široko kompatibilný, ECDSA je rýchlejší a bezpečnejší, ale nemusí byť podporovaný staršími systémami"
+	},
+	"certificates.key-type-ecdsa": {
+		"defaultMessage": "ECDSA 256"
+	},
+	"certificates.key-type-rsa": {
+		"defaultMessage": "RSA 2048"
+	},
+	"certificates.request.subtitle": {
+		"defaultMessage": "pomocou Let's Encrypt"
+	},
+	"certificates.request.title": {
+		"defaultMessage": "Vyžiadať nový certifikát"
+	},
+	"column.access": {
+		"defaultMessage": "Prístup"
+	},
+	"column.authorization": {
+		"defaultMessage": "Autorizácia"
+	},
+	"column.authorizations": {
+		"defaultMessage": "Autorizácie"
+	},
+	"column.custom-locations": {
+		"defaultMessage": "Vlastné umiestnenia"
+	},
+	"column.destination": {
+		"defaultMessage": "Cieľ"
+	},
+	"column.details": {
+		"defaultMessage": "Podrobnosti"
+	},
+	"column.email": {
+		"defaultMessage": "Email"
+	},
+	"column.event": {
+		"defaultMessage": "Udalosť"
+	},
+	"column.expires": {
+		"defaultMessage": "Platnosť do"
+	},
+	"column.http-code": {
+		"defaultMessage": "Prístup"
+	},
+	"column.incoming-port": {
+		"defaultMessage": "Vstupný port"
+	},
+	"column.name": {
+		"defaultMessage": "Názov"
+	},
+	"column.protocol": {
+		"defaultMessage": "Protokol"
+	},
+	"column.provider": {
+		"defaultMessage": "Poskytovateľ"
+	},
+	"column.roles": {
+		"defaultMessage": "Roly"
+	},
+	"column.rules": {
+		"defaultMessage": "Pravidlá"
+	},
+	"column.satisfy": {
+		"defaultMessage": "Splniť"
+	},
+	"column.satisfy-all": {
+		"defaultMessage": "Všetky"
+	},
+	"column.satisfy-any": {
+		"defaultMessage": "Ktorékoľvek"
+	},
+	"column.scheme": {
+		"defaultMessage": "Schéma"
+	},
+	"column.source": {
+		"defaultMessage": "Zdroj"
+	},
+	"column.ssl": {
+		"defaultMessage": "SSL"
+	},
+	"column.status": {
+		"defaultMessage": "Stav"
+	},
+	"created-on": {
+		"defaultMessage": "Vytvorené: {date}"
+	},
+	"dashboard": {
+		"defaultMessage": "Panel"
+	},
+	"dead-host": {
+		"defaultMessage": "404 hostiteľa"
+	},
+	"dead-hosts": {
+		"defaultMessage": "404 Hostitelia"
+	},
+	"dead-hosts.count": {
+		"defaultMessage": "{count} {count, plural, one {404 hostiteľ} few {404 hostitelia} other {404 hostiteľov}}"
+	},
+	"disabled": {
+		"defaultMessage": "Deaktivované"
+	},
+	"domain-names": {
+		"defaultMessage": "Doménové mená"
+	},
+	"domain-names.max": {
+		"defaultMessage": "Maximálne {count} doménových mien"
+	},
+	"domain-names.placeholder": {
+		"defaultMessage": "Začnite písať pre pridanie domény..."
+	},
+	"domain-names.wildcards-not-permitted": {
+		"defaultMessage": "Wildcards nie sú pre tento typ povolené"
+	},
+	"domain-names.wildcards-not-supported": {
+		"defaultMessage": "Wildcards nie sú podporované pre túto certifikačnú autoritu"
+	},
+	"domains.force-ssl": {
+		"defaultMessage": "Vynútiť SSL"
+	},
+	"domains.hsts-enabled": {
+		"defaultMessage": "HSTS povolené"
+	},
+	"domains.hsts-subdomains": {
+		"defaultMessage": "HSTS pre subdomény"
+	},
+	"domains.http2-support": {
+		"defaultMessage": "Podpora HTTP/2"
+	},
+	"domains.use-dns": {
+		"defaultMessage": "Použiť DNS výzvu"
+	},
+	"email-address": {
+		"defaultMessage": "Emailová adresa"
+	},
+	"empty-search": {
+		"defaultMessage": "Nenašli sa žiadne výsledky"
+	},
+	"empty-subtitle": {
+		"defaultMessage": "Prečo nevytvoríte nejaký?"
+	},
+	"enabled": {
+		"defaultMessage": "Aktivované"
+	},
+	"error.access.at-least-one": {
+		"defaultMessage": "Je vyžadovaná aspoň jedna autorizácia alebo jedno prístupové pravidlo"
+	},
+	"error.access.duplicate-usernames": {
+		"defaultMessage": "Používateľské mená pre autorizáciu musia byť jedinečné"
+	},
+	"error.invalid-auth": {
+		"defaultMessage": "Neplatný email alebo heslo"
+	},
+	"error.invalid-domain": {
+		"defaultMessage": "Neplatná doména: {domain}"
+	},
+	"error.invalid-email": {
+		"defaultMessage": "Neplatná emailová adresa"
+	},
+	"error.max-character-length": {
+		"defaultMessage": "Maximálna dĺžka je {max} znak{max, plural, one {} few {y} other {ov}}"
+	},
+	"error.max-domains": {
+		"defaultMessage": "Príliš veľa domén, maximum je {max}"
+	},
+	"error.maximum": {
+		"defaultMessage": "Maximum je {max}"
+	},
+	"error.min-character-length": {
+		"defaultMessage": "Minimálna dĺžka je {min} znak{min, plural, one {} few {y} other {ov}}"
+	},
+	"error.minimum": {
+		"defaultMessage": "Minimum je {min}"
+	},
+	"error.passwords-must-match": {
+		"defaultMessage": "Heslá sa musia zhodovať"
+	},
+	"error.required": {
+		"defaultMessage": "Toto pole je povinné"
+	},
+	"expires.on": {
+		"defaultMessage": "Platnosť do: {date}"
+	},
+	"footer.github-fork": {
+		"defaultMessage": "Forknite ma na GitHube"
+	},
+	"host.flags.block-exploits": {
+		"defaultMessage": "Blokovať bežné exploity"
+	},
+	"host.flags.cache-assets": {
+		"defaultMessage": "Uložiť zdroje do vyrovnávacej pamäte"
+	},
+	"host.flags.preserve-path": {
+		"defaultMessage": "Zachovať cestu"
+	},
+	"host.flags.protocols": {
+		"defaultMessage": "Protokoly"
+	},
+	"host.flags.websockets-upgrade": {
+		"defaultMessage": "Podpora WebSockets"
+	},
+	"host.forward-port": {
+		"defaultMessage": "Port presmerovania"
+	},
+	"host.forward-scheme": {
+		"defaultMessage": "Schéma"
+	},
+	"hosts": {
+		"defaultMessage": "Hostitelia"
+	},
+	"http-only": {
+		"defaultMessage": "Len HTTP"
+	},
+	"import_export.conflicts": {
+		"defaultMessage": "Conflicts"
+	},
+	"import_export.export_button": {
+		"defaultMessage": "Export"
+	},
+	"import_export.export_options": {
+		"defaultMessage": "Export Options"
+	},
+	"import_export.export_tab": {
+		"defaultMessage": "Export"
+	},
+	"import_export.import_another": {
+		"defaultMessage": "Import Another"
+	},
+	"import_export.import_button": {
+		"defaultMessage": "Import"
+	},
+	"import_export.import_config": {
+		"defaultMessage": "Import Configuration"
+	},
+	"import_export.import_tab": {
+		"defaultMessage": "Import / Migrate"
+	},
+	"import_export.include_certificates": {
+		"defaultMessage": "Include certificate files (creates ZIP)"
+	},
+	"import_export.include_certificates_note": {
+		"defaultMessage": "Certificate PEM files will be included in the download. The export will be a ZIP file instead of JSON."
+	},
+	"import_export.new_items": {
+		"defaultMessage": "New"
+	},
+	"import_export.npm_migration": {
+		"defaultMessage": "NPM Migration"
+	},
+	"import_export.npm_migration_description": {
+		"defaultMessage": "Migrate from NGINX Proxy Manager by uploading its SQLite database file (database.sqlite)."
+	},
+	"import_export.npm_upload": {
+		"defaultMessage": "Upload NPM Database"
+	},
+	"import_export.preview": {
+		"defaultMessage": "Import Preview"
+	},
+	"import_export.resolution": {
+		"defaultMessage": "Resolution"
+	},
+	"import_export.resolution_create_new": {
+		"defaultMessage": "Create New"
+	},
+	"import_export.resolution_overwrite": {
+		"defaultMessage": "Overwrite"
+	},
+	"import_export.resolution_skip": {
+		"defaultMessage": "Skip"
+	},
+	"import_export.result_created": {
+		"defaultMessage": "Created"
+	},
+	"import_export.result_overwritten": {
+		"defaultMessage": "Overwritten"
+	},
+	"import_export.result_skipped": {
+		"defaultMessage": "Skipped"
+	},
+	"import_export.select_types": {
+		"defaultMessage": "Select what to export"
+	},
+	"import_export.success": {
+		"defaultMessage": "Import Successful"
+	},
+	"import_export.summary": {
+		"defaultMessage": "Summary"
+	},
+	"import_export.title": {
+		"defaultMessage": "Import / Export"
+	},
+	"import_export.total": {
+		"defaultMessage": "Total"
+	},
+	"import_export.upload_file": {
+		"defaultMessage": "Upload Export File"
+	},
+	"import_export.upload_file_note": {
+		"defaultMessage": "Accepts .json or .zip files exported from StarlaneProxyManager"
+	},
+	"lets-encrypt": {
+		"defaultMessage": "Let's Encrypt"
+	},
+	"lets-encrypt-via-dns": {
+		"defaultMessage": "Let's Encrypt cez DNS"
+	},
+	"lets-encrypt-via-http": {
+		"defaultMessage": "Let's Encrypt cez HTTP"
+	},
+	"loading": {
+		"defaultMessage": "Načítava sa…"
+	},
+	"login.2fa-code": {
+		"defaultMessage": "Overovací kód"
+	},
+	"login.2fa-code-placeholder": {
+		"defaultMessage": "Vložiť kód"
+	},
+	"login.2fa-description": {
+		"defaultMessage": "Vložte kód z vašej overovacej aplikácie"
+	},
+	"login.2fa-title": {
+		"defaultMessage": "Dvoj-faktorové overenie"
+	},
+	"login.2fa-verify": {
+		"defaultMessage": "Overiť"
+	},
+	"login.sso-button": {
+		"defaultMessage": "Sign in with SSO"
+	},
+	"login.sso-error": {
+		"defaultMessage": "SSO authentication failed"
+	},
+	"login.sso-separator": {
+		"defaultMessage": "or"
+	},
+	"login.title": {
+		"defaultMessage": "Prihláste sa do svojho účtu"
+	},
+	"logs.access-log": {
+		"defaultMessage": "Access Log"
+	},
+	"logs.auto-refresh": {
+		"defaultMessage": "Auto-refresh"
+	},
+	"logs.copied": {
+		"defaultMessage": "Copied!"
+	},
+	"logs.copy-to-clipboard": {
+		"defaultMessage": "Copy"
+	},
+	"logs.empty": {
+		"defaultMessage": "No log entries"
+	},
+	"logs.error-log": {
+		"defaultMessage": "Error Log"
+	},
+	"logs.file-size": {
+		"defaultMessage": "File size"
+	},
+	"logs.line-count": {
+		"defaultMessage": "Lines"
+	},
+	"logs.lines": {
+		"defaultMessage": "lines"
+	},
+	"logs.no-log-file": {
+		"defaultMessage": "Log file not found"
+	},
+	"logs.refresh": {
+		"defaultMessage": "Refresh"
+	},
+	"logs.search": {
+		"defaultMessage": "Search"
+	},
+	"logs.view-logs": {
+		"defaultMessage": "View Logs"
+	},
+	"nginx-config.label": {
+		"defaultMessage": "Vlastná Nginx konfigurácia"
+	},
+	"nginx-config.placeholder": {
+		"defaultMessage": "# Zadajte vlastnú Nginx konfiguráciu na vlastné riziko!"
+	},
+	"no-permission-error": {
+		"defaultMessage": "Nemáte oprávnenie na zobrazenie tohto obsahu."
+	},
+	"notfound.action": {
+		"defaultMessage": "Späť na hlavnú stránku"
+	},
+	"notfound.content": {
+		"defaultMessage": "Ľutujeme, stránka, ktorú hľadáte, nebola nájdená"
+	},
+	"notfound.title": {
+		"defaultMessage": "Ups… Našli ste chybovú stránku"
+	},
+	"notification.error": {
+		"defaultMessage": "Chyba"
+	},
+	"notification.object-deleted": {
+		"defaultMessage": "{object} bol odstránený"
+	},
+	"notification.object-disabled": {
+		"defaultMessage": "{object} bol deaktivovaný"
+	},
+	"notification.object-enabled": {
+		"defaultMessage": "{object} bol aktivovaný"
+	},
+	"notification.object-renewed": {
+		"defaultMessage": "{object} bol obnovený"
+	},
+	"notification.object-saved": {
+		"defaultMessage": "{object} bol uložený"
+	},
+	"notification.success": {
+		"defaultMessage": "Úspech"
+	},
+	"object.actions-title": {
+		"defaultMessage": "{object} #{id}"
+	},
+	"object.add": {
+		"defaultMessage": "Pridať {object}"
+	},
+	"object.delete": {
+		"defaultMessage": "Vymazať {object}"
+	},
+	"object.delete.content": {
+		"defaultMessage": "Naozaj chcete vymazať tento {object}?"
+	},
+	"object.edit": {
+		"defaultMessage": "Upraviť {object}"
+	},
+	"object.empty": {
+		"defaultMessage": "Nie sú {objects}"
+	},
+	"object.event.created": {
+		"defaultMessage": "Vytvorený {object}"
+	},
+	"object.event.deleted": {
+		"defaultMessage": "Vymazaný {object}"
+	},
+	"object.event.disabled": {
+		"defaultMessage": "Deaktivovaný {object}"
+	},
+	"object.event.enabled": {
+		"defaultMessage": "Aktivovaný {object}"
+	},
+	"object.event.renewed": {
+		"defaultMessage": "Obnovený {object}"
+	},
+	"object.event.updated": {
+		"defaultMessage": "Aktualizovaný {object}"
+	},
+	"offline": {
+		"defaultMessage": "Offline"
+	},
+	"online": {
+		"defaultMessage": "Online"
+	},
+	"options": {
+		"defaultMessage": "Možnosti"
+	},
+	"password": {
+		"defaultMessage": "Heslo"
+	},
+	"password.generate": {
+		"defaultMessage": "Vygenerovať náhodné heslo"
+	},
+	"password.hide": {
+		"defaultMessage": "Skryť heslo"
+	},
+	"password.show": {
+		"defaultMessage": "Zobraziť heslo"
+	},
+	"permissions.hidden": {
+		"defaultMessage": "Skryté"
+	},
+	"permissions.manage": {
+		"defaultMessage": "Spravovať"
+	},
+	"permissions.view": {
+		"defaultMessage": "Len na zobrazenie"
+	},
+	"permissions.visibility.all": {
+		"defaultMessage": "Všetky položky"
+	},
+	"permissions.visibility.title": {
+		"defaultMessage": "Viditeľnosť položky"
+	},
+	"permissions.visibility.user": {
+		"defaultMessage": "Len vytvorené položky"
+	},
+	"proxy-host": {
+		"defaultMessage": "proxy hostiteľa"
+	},
+	"proxy-host.forward-host": {
+		"defaultMessage": "Cieľový názov hostiteľa / IP"
+	},
+	"proxy-hosts": {
+		"defaultMessage": "Proxy hostitelia"
+	},
+	"proxy-hosts.count": {
+		"defaultMessage": "{count} {count, plural, one {proxy hostiteľ} few {proxy hostitelia} other {proxy hostiteľov}}"
+	},
+	"public": {
+		"defaultMessage": "Verejné"
+	},
+	"redirection-host": {
+		"defaultMessage": "presmerovacieho hostiteľa"
+	},
+	"redirection-host.forward-domain": {
+		"defaultMessage": "Cieľová doména"
+	},
+	"redirection-host.forward-http-code": {
+		"defaultMessage": "HTTP kód"
+	},
+	"redirection-hosts": {
+		"defaultMessage": "Presmerovací hostitelia"
+	},
+	"redirection-hosts.count": {
+		"defaultMessage": "{count} {count, plural, one {presmerovací hostiteľ} few {presmerovací hostitelia} other {presmerovacích hostiteľov}}"
+	},
+	"redirection-hosts.http-code.300": {
+		"defaultMessage": "300 Viacero možností"
+	},
+	"redirection-hosts.http-code.301": {
+		"defaultMessage": "301 Trvalo presunuté"
+	},
+	"redirection-hosts.http-code.302": {
+		"defaultMessage": "302 Dočasne presunuté"
+	},
+	"redirection-hosts.http-code.303": {
+		"defaultMessage": "303 Pozrieť iné"
+	},
+	"redirection-hosts.http-code.307": {
+		"defaultMessage": "307 Dočasné presmerovanie"
+	},
+	"redirection-hosts.http-code.308": {
+		"defaultMessage": "308 Trvalé presmerovanie"
+	},
+	"role.admin": {
+		"defaultMessage": "Administrátor"
+	},
+	"role.standard-user": {
+		"defaultMessage": "Bežný používateľ"
+	},
+	"save": {
+		"defaultMessage": "Uložiť"
+	},
+	"setting": {
+		"defaultMessage": "Nastavenie"
+	},
+	"settings": {
+		"defaultMessage": "Nastavenia"
+	},
+	"settings.default-site": {
+		"defaultMessage": "Predvolená stránka"
+	},
+	"settings.default-site.404": {
+		"defaultMessage": "Stránka 404"
+	},
+	"settings.default-site.444": {
+		"defaultMessage": "Bez odpovede (444)"
+	},
+	"settings.default-site.congratulations": {
+		"defaultMessage": "Gratulačná stránka"
+	},
+	"settings.default-site.description": {
+		"defaultMessage": "Čo zobraziť, keď Nginx zachytí neznámeho hostiteľa"
+	},
+	"settings.default-site.html": {
+		"defaultMessage": "Vlastné HTML"
+	},
+	"settings.default-site.html.placeholder": {
+		"defaultMessage": "<!-- Sem zadajte vlastný HTML obsah -->"
+	},
+	"settings.default-site.redirect": {
+		"defaultMessage": "Presmerovať"
+	},
+	"settings.oidc": {
+		"defaultMessage": "OIDC / SSO"
+	},
+	"settings.oidc.auto-create": {
+		"defaultMessage": "Auto-create users"
+	},
+	"settings.oidc.auto-create-help": {
+		"defaultMessage": "Automatically create accounts for new OIDC users"
+	},
+	"settings.oidc.button-label": {
+		"defaultMessage": "Button Label"
+	},
+	"settings.oidc.button-label-help": {
+		"defaultMessage": "Text shown on the SSO button on the login page"
+	},
+	"settings.oidc.claim-email": {
+		"defaultMessage": "Email Claim"
+	},
+	"settings.oidc.claim-mappings": {
+		"defaultMessage": "Claim Mappings"
+	},
+	"settings.oidc.claim-name": {
+		"defaultMessage": "Name Claim"
+	},
+	"settings.oidc.claim-nickname": {
+		"defaultMessage": "Nickname Claim"
+	},
+	"settings.oidc.client-id": {
+		"defaultMessage": "Client ID"
+	},
+	"settings.oidc.client-secret": {
+		"defaultMessage": "Client Secret"
+	},
+	"settings.oidc.default-role": {
+		"defaultMessage": "Default Role"
+	},
+	"settings.oidc.enable": {
+		"defaultMessage": "Enable OIDC"
+	},
+	"settings.oidc.issuer-url": {
+		"defaultMessage": "Issuer URL"
+	},
+	"settings.oidc.issuer-url-help": {
+		"defaultMessage": "The OpenID Connect issuer URL from your identity provider"
+	},
+	"settings.oidc.oidc-only": {
+		"defaultMessage": "OIDC Only Mode"
+	},
+	"settings.oidc.oidc-only-help": {
+		"defaultMessage": "Hide the password form and require all users to sign in via OIDC. Override with PASSWORD_FORM_SHOW env var."
+	},
+	"settings.oidc.saved": {
+		"defaultMessage": "OIDC settings saved"
+	},
+	"settings.oidc.scopes": {
+		"defaultMessage": "Scopes"
+	},
+	"settings.oidc.test-connection": {
+		"defaultMessage": "Test Connection"
+	},
+	"settings.oidc.test-failure": {
+		"defaultMessage": "Failed to connect to OIDC provider"
+	},
+	"settings.oidc.test-success": {
+		"defaultMessage": "Successfully connected to OIDC provider"
+	},
+	"setup.preamble": {
+		"defaultMessage": "Začnite vytvorením administrátorského účtu."
+	},
+	"setup.title": {
+		"defaultMessage": "Vitajte!"
+	},
+	"sign-in": {
+		"defaultMessage": "Prihlásiť sa"
+	},
+	"ssl-certificate": {
+		"defaultMessage": "SSL certifikát"
+	},
+	"stream": {
+		"defaultMessage": "stream"
+	},
+	"stream.forward-host": {
+		"defaultMessage": "Cieľový hostiteľ"
+	},
+	"stream.forward-host.placeholder": {
+		"defaultMessage": "napriklad.sk alebo 10.0.0.1 alebo 2001:db8:3333:4444:5555:6666:7777:8888"
+	},
+	"stream.incoming-port": {
+		"defaultMessage": "Vstupný port"
+	},
+	"streams": {
+		"defaultMessage": "Streamy"
+	},
+	"streams.count": {
+		"defaultMessage": "{count} {count, plural, one {stream} few {streamy} other {streamov}}"
+	},
+	"streams.tcp": {
+		"defaultMessage": "TCP"
+	},
+	"streams.udp": {
+		"defaultMessage": "UDP"
+	},
+	"test": {
+		"defaultMessage": "Test"
+	},
+	"update-available": {
+		"defaultMessage": "Dostupná aktualizácia: {latestVersion}"
+	},
+	"user": {
+		"defaultMessage": "používateľa"
+	},
+	"user.change-password": {
+		"defaultMessage": "Zmeniť heslo"
+	},
+	"user.confirm-password": {
+		"defaultMessage": "Potvrdiť heslo"
+	},
+	"user.current-password": {
+		"defaultMessage": "Aktuálne heslo"
+	},
+	"user.edit-profile": {
+		"defaultMessage": "Upraviť profil"
+	},
+	"user.full-name": {
+		"defaultMessage": "Celé meno"
+	},
+	"user.login-as": {
+		"defaultMessage": "Prihlásiť sa ako {name}"
+	},
+	"user.logout": {
+		"defaultMessage": "Odhlásiť sa"
+	},
+	"user.new-password": {
+		"defaultMessage": "Nové heslo"
+	},
+	"user.nickname": {
+		"defaultMessage": "Prezývka"
+	},
+	"user.set-password": {
+		"defaultMessage": "Nastaviť heslo"
+	},
+	"user.set-permissions": {
+		"defaultMessage": "Nastaviť oprávnenia pre {name}"
+	},
+	"user.switch-dark": {
+		"defaultMessage": "Prepnúť na tmavý režim"
+	},
+	"user.switch-light": {
+		"defaultMessage": "Prepnúť na svetlý režim"
+	},
+	"user.two-factor": {
+		"defaultMessage": "Dvojfakt. overenie"
+	},
+	"username": {
+		"defaultMessage": "Používateľské meno"
+	},
+	"users": {
+		"defaultMessage": "Používatelia"
+	}
+}

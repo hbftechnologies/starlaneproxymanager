@@ -1,0 +1,83 @@
+{
+	"operationId": "getProxyHostAccessLog",
+	"summary": "Get Proxy Host Access Log",
+	"description": "Retrieve the last N lines from a proxy host's NGINX access log.",
+	"tags": ["proxy-hosts"],
+	"security": [
+		{
+			"bearerAuth": []
+		}
+	],
+	"parameters": [
+		{
+			"name": "hostID",
+			"in": "path",
+			"required": true,
+			"schema": {
+				"type": "integer",
+				"minimum": 1
+			}
+		},
+		{
+			"name": "lines",
+			"in": "query",
+			"description": "Number of lines to return (default 100, max 1000)",
+			"schema": {
+				"type": "integer",
+				"minimum": 1,
+				"maximum": 1000,
+				"default": 100
+			}
+		},
+		{
+			"name": "search",
+			"in": "query",
+			"description": "Filter log lines containing this text",
+			"schema": {
+				"type": "string"
+			}
+		}
+	],
+	"responses": {
+		"200": {
+			"description": "Access log lines",
+			"content": {
+				"application/json": {
+					"schema": {
+						"type": "object",
+						"properties": {
+							"lines": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							},
+							"totalSize": {
+								"type": "integer",
+								"description": "Total file size in bytes"
+							},
+							"fileName": {
+								"type": "string",
+								"description": "Log file name"
+							},
+							"lineCount": {
+								"type": "integer",
+								"description": "Number of lines returned"
+							}
+						}
+					},
+					"examples": {
+						"default": {
+							"value": {
+								"lines": ["[01/Jan/2026:12:00:00 +0000] HIT 200 200 - GET https example.com \"/\" [Client 192.168.1.1]"],
+								"totalSize": 1048576,
+								"fileName": "proxy-host-1_access.log",
+								"lineCount": 1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
