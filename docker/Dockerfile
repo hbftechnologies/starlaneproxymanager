@@ -9,7 +9,7 @@
 FROM node:20-bookworm-slim AS frontend-build
 WORKDIR /build
 COPY frontend/package.json frontend/yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --network-timeout 600000
 COPY frontend/ .
 RUN yarn locale-compile && yarn build
 
