@@ -6,7 +6,7 @@
 # This file assumes the frontend has been pre-built (./scripts/frontend-build)
 
 # ── Stage 1: Frontend build ──────────────────────────────
-FROM node:20-bookworm-slim AS frontend-build
+FROM node:26-bookworm-slim AS frontend-build
 WORKDIR /build
 COPY frontend/package.json frontend/yarn.lock ./
 RUN yarn install --frozen-lockfile --network-timeout 600000
